@@ -14,17 +14,17 @@ stages:
       size: 5200
       nfiles: 4
   train:
-    cmd: C:/Users/CONDA/python.exe src/train.py data
+    cmd: C:/Apps/Python/python.exe src/train.py data
     deps:
     - path: data
       hash: md5
-      md5: 937ac76928b4c017106f593b895b0ea7.dir
+      md5: 0b75ec01804fc456a416d79bb05abb5d.dir
       size: 5200
       nfiles: 4
     - path: src/train.py
       hash: md5
-      md5: c8cc040291d6ec731dff472169f5535b
-      size: 1883
+      md5: 2a479bd5014bc77ceb8dca9133d6701c
+      size: 1821
     params:
       params.yaml:
-        train.epochs: 50
+        train.epochs: 80
